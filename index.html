@@ -3,13 +3,16 @@
 	<head>
 		<title>My Website</title>
 		<meta charset="UTF-8">
+		<!--Styles by Bootstrap framework. Reference in README.txt-->
 		<link rel="stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	</head>	
-	<body>
+	<!--Simple Main Heading to Introduce the Webpage-->
+	<body class = " bg-info">
 		<header class = "jumbotron text-center modal-header">
 			<h1>Welcome to My Website!</h1>
 		</header>
-		<section class = "modal-body text-center bg-info">
+		<!--The QWERTY keys and 'meat' of the website is placed here-->
+		<section class = "text-center bg-info" style = "padding: 100px; margin-bottom: 50px">
 			<h2>Press the following keys and watch this page recognize your input!</h2>
 			<img src = "images/keyq.png" id = "keyq" width = "150px" />
 			<img src = "images/keyw.png" id = "keyw" width = "150px" />
@@ -18,9 +21,11 @@
 			<img src = "images/keyt.png" id = "keyt" width = "150px" />
 			<img src = "images/keyy.png" id = "keyy" width = "150px" />
 		</section>
-		<footer class="jumbotron text-uppercase text-center" style = "background-color: black">
-			<p style = "color:#337ab7">&copy; Jan.31st 2017 - Grant Warr</p>
+		<!--Footer explaining the webpage was created by myself, Grant Warr-->
+		<footer class="text-uppercase modal-footer" style = "margin: 0; background-color: black">
+			<p style = "color:#337ab7 ">&copy; Jan.31st 2017 - Grant Warr</p>
 		</footer>
+		<!--Call to external Javascript file done here to speed up load times-->
 		<script src = "Javascript/script.js"></script>
 	</body>
 </html>

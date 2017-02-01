@@ -1,3 +1,4 @@
+/*Functions to obtain the pressed key image*/ 
 function changeQ(){
 	var img = document.getElementById("keyq");
 	img.src  = "images/keyqon.png";
@@ -27,7 +28,8 @@ function changeY(){
 	var img = document.getElementById("keyy");
 	img.src  = "images/keyyon.png";
 }
-
+/***********************************************/
+/*Functions to obtain the unpressed key images*/
 function changeQAgain(){
 	var img = document.getElementById("keyq");
 	img.src  = "images/keyq.png";
@@ -57,7 +59,8 @@ function changeYAgain(){
 	var img = document.getElementById("keyy");
 	img.src  = "images/keyy.png";
 }
-
+/***********************************************/
+/*Recgnize when a QWERTY key is pressed. If so, change the image to pressed key*/
 document.onkeydown = function(e) {
 	e = e || window.event;
 	if (e.keyCode == '81') 
@@ -74,6 +77,7 @@ document.onkeydown = function(e) {
 		changeY();
 }
 
+/*Recognize when a QWERTY is no longer being held down. If so, change the image to unpressed key*/
 document.onkeyup = function(e) {
 	e = e || window.event;
 	if (e.keyCode == '81') 
